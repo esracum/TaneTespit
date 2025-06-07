@@ -40,7 +40,7 @@ markers[unknown == 255] = 0
 # Watershed
 markers = cv2.watershed(image, markers)
 output = image.copy()
-output[markers == -1] = [255, 0, 0]  # sınırları kırmızı yap
+output[markers == -1] = [255, 0, 0]  # sınırları mavi yapti
 
 # Kontur çizimi ve sayma
 count = 0
